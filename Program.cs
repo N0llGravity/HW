@@ -19,7 +19,6 @@ Console.Write($"Max: {num2}");
 */
 
 
-
 /* 
 
 // Максимальное число из 3х
@@ -52,6 +51,7 @@ int res = Maximum(num1, num2, num3);
 Console.Write($"Biggest number is {res}");
 */
 
+
 /*
 // Проверка числа на чётность
 
@@ -75,3 +75,55 @@ bool answer = Chetniy(number);
 Console.WriteLine($"number {number} is even: {answer}");
 */ 
 
+
+/*
+
+// чётные числа от 1 до N 
+
+int Evennumcount(int numN)   //находим количество чётных чисел
+
+{
+    int count = numN / 2;
+    if(count == 0)
+    {
+        count = -1;
+        return count;
+    }
+    
+    else
+    {
+        return count;
+    }
+}
+
+void Evennumbers(int[] ryad)  //вывод чётных чисел
+{
+    int size = ryad.Length;
+    int index = 0;
+    int step = 2;
+
+    while(index < size)
+        {
+            ryad[index] = ryad[index] + step;
+            Console.WriteLine(ryad[index]);
+            index++;
+            step = step + 2;
+        }
+}
+
+Console.WriteLine("input an integer number ");
+int n = Convert.ToInt32(Console.ReadLine());
+int n05 = Evennumcount(n);
+
+if(n05 == -1)
+{
+    Console.WriteLine("No even numbers");
+}
+
+else
+{
+int[] array = new int[n05];
+
+Evennumbers(array);
+}
+*/
