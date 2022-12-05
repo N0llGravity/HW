@@ -52,3 +52,26 @@ int res = Maximum(num1, num2, num3);
 Console.Write($"Biggest number is {res}");
 */
 
+/*
+// Проверка числа на чётность
+
+bool Chetniy(int num)
+{
+    num = num % 2;
+    if(num == 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+Console.WriteLine("input an integer number ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+bool answer = Chetniy(number);
+Console.WriteLine($"number {number} is even: {answer}");
+*/ 
+
